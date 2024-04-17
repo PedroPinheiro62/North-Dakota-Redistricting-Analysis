@@ -47,7 +47,7 @@ def add_to_results(results_dict, part):
                     col_name = updater + "_" + party + "_" + str(dist)
                     if col_name not in results_dict:
                         results_dict[col_name] = []
-                    results_dict[col_name].append(part[updater].totals_for_party['Democratic'][dist])
+                    results_dict[col_name].append(part[updater].totals_for_party[party][dist])
             
             metric_name = updater + "_" + "mean_median"
             if metric_name not in results_dict:
@@ -69,7 +69,7 @@ def add_to_results(results_dict, part):
                 results_dict[updater] = []
             results_dict[updater].append(len(part[updater]))
 
-random.seed(13579)
+random.seed(123456)
 
 # Read Geodataframe from Shapefile.
 gdf = gpd.read_file("./data_cleaning/ND/ND.shp")
@@ -186,7 +186,7 @@ population_constraint = constraints.within_percent_of_ideal_population(
 )
 
 # Create a short random walk using proposal and contraint to test.
-total_steps = 25000
+total_steps = 100
 random_walk = MarkovChain(
     proposal = rw_proposal, 
     constraints = [population_constraint],
