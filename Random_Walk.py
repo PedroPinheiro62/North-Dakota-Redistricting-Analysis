@@ -186,7 +186,7 @@ population_constraint = constraints.within_percent_of_ideal_population(
 )
 
 # Create a short random walk using proposal and contraint to test.
-total_steps = 100
+total_steps = 30000
 random_walk = MarkovChain(
     proposal = rw_proposal, 
     constraints = [population_constraint],
