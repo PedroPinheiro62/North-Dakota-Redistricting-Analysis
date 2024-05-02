@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+MIT License
+
+Copyright (c) 2020 Metric Geometry and Gerrymandering Group
+
 Created on Wed Mar 29 16:42:57 2023
 
 @author: erv2 and all the authors of https://github.com/vrdi/shortbursts-gingles/blob/main/state_experiments/gingleator.py
