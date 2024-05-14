@@ -12,7 +12,7 @@ The repository is structured as follows:
 ### Data Cleaning
 - `data_cleaning/`: Contains Jupyter notebooks and data for cleaning and preparing the data for the Markov Chain runs.
 
-### Emsemble Analysis
+### Ensemble Analysis
 - `Random_Walk.py`: Contains the code for performing a random walk on the cleaned data.
 - `Ensembles Analysis.ipynb`: A Jupyter notebook for the ensemble analysis (Histograms and Box Plots).
 
